@@ -9,10 +9,11 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Api
-@Path("/")
+@Path("")
 public class HelloApi {
 
     @GET
+    @Path("api")
     @Produces(MediaType.APPLICATION_JSON)
     @ApiOperation(value = "Returns hello message")
     public String get() {

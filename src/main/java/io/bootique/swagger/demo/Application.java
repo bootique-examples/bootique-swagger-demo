@@ -1,11 +1,13 @@
 package io.bootique.swagger.demo;
 
+import com.google.inject.Binder;
+import com.google.inject.Module;
+import io.bootique.BQCoreModule;
 import io.bootique.Bootique;
 import io.bootique.jersey.JerseyModule;
-import io.bootique.swagger.SwaggerModule;
 import io.swagger.jaxrs.config.BeanConfig;
 
-public class Application extends SwaggerModule {
+public class Application implements Module {
 
     public Application() {
         BeanConfig conf = new BeanConfig();
@@ -13,7 +15,7 @@ public class Application extends SwaggerModule {
         conf.setDescription("Swagger demo api");
         conf.setVersion("1.0");
         conf.setHost("localhost:9999");
-        conf.setBasePath("/");
+        conf.setBasePath("/api");
         conf.setResourcePackage("io.bootique.swagger.demo");
         conf.setSchemes(new String[] { "http" });
         conf.setScan(true);
@@ -28,8 +30,8 @@ public class Application extends SwaggerModule {
                 .exec().exit();
     }
 
-    public void configure(com.google.inject.Binder binder) {
-        super.configure(binder);
+    @Override
+    public void configure(Binder binder) {
         JerseyModule.extend(binder).addResource(HelloApi.class);
     }
 }

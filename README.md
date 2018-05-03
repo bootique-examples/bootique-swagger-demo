@@ -21,9 +21,10 @@ java -jar target/bootique-swagger-demo-1.0-SNAPSHOT.jar
 
 After launching the app, go to
 
-1. [http://localhost:9999/] Get hello page
-2. [http://localhost:9999/swagger.json] Documented by swagger application api as JSON
-3. [http://localhost:9999/swagger.yaml] Documented by swagger application api as YAML
+1. http://localhost:9999/api Get hello page
+2. http://localhost:9999/swagger.json Documented by swagger application api as JSON
+3. http://localhost:9999/swagger.yaml Documented by swagger application api as YAML
+3. http://localhost:9999/swagger-ui Swagger Web console
 
 
 
