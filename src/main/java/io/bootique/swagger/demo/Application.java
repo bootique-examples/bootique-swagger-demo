@@ -2,7 +2,6 @@ package io.bootique.swagger.demo;
 
 import com.google.inject.Binder;
 import com.google.inject.Module;
-import io.bootique.BQCoreModule;
 import io.bootique.Bootique;
 import io.bootique.jersey.JerseyModule;
 import io.swagger.jaxrs.config.BeanConfig;

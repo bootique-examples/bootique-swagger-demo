@@ -35,7 +35,8 @@
     <dependencies>
         <dependency>
             <groupId>io.bootique.swagger</groupId>
-            <artifactId>bootique-swagger</artifactId>
+            <artifactId>bootique-swagger-console</artifactId>
+            <!--<version>0.26-SNAPSHOT</version>-->
         </dependency>
         <dependency>
             <groupId>io.bootique.logback</groupId>
