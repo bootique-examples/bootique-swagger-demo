@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.bootique.swagger.demo</groupId>
-    <artifactId>bootique-examples</artifactId>
+    <artifactId>bootique-swagger-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <parent>
         <groupId>io.bootique.parent</groupId>
@@ -35,12 +35,17 @@
     <dependencies>
         <dependency>
             <groupId>io.bootique.swagger</groupId>
-            <artifactId>bootique-swagger-console</artifactId>
-            <!--<version>0.26-SNAPSHOT</version>-->
+            <artifactId>bootique-swagger-ui</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.bootique.swagger</groupId>
+            <artifactId>bootique-swagger</artifactId>
         </dependency>
         <dependency>
             <groupId>io.bootique.logback</groupId>
             <artifactId>bootique-logback</artifactId>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

@@ -25,7 +25,7 @@ public class Application implements Module {
                 .app(args)
                 .autoLoadModules()
                 .module(Application.class)
-                .args("--server", "--config=classpath:bootique.yml")
+                .args("--server")
                 .exec().exit();
     }
 
