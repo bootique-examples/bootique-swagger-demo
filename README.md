@@ -16,7 +16,7 @@ mvn package
 Enter the following to launch application with default url to swagger.json:
 
 ```bash
-java -jar target/bootique-swagger-demo-1.0-SNAPSHOT.jar --config=classpath:bootique.yml
+java -jar target/bootique-swagger-demo-1.0-SNAPSHOT.jar
 ```
 
 Enter the following to launch app with custom url to swagger.json configured in yml file:

@@ -1,6 +1,2 @@
-jetty:
-  connectors:
-    - port: 9999
-
 swaggerui:
   specUrl: https://petstore.swagger.io/v2/swagger.json
