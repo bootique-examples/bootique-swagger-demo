@@ -23,7 +23,7 @@
             <dependency>
                 <groupId>io.bootique.bom</groupId>
                 <artifactId>bootique-bom</artifactId>
-                <version>1.0.RC1</version>
+                <version>1.0.RC2-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -39,6 +39,11 @@
         <dependency>
             <groupId>io.bootique.swagger</groupId>
             <artifactId>bootique-swagger</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.bootique.jetty</groupId>
+            <artifactId>bootique-jetty-cors</artifactId>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>io.bootique.logback</groupId>

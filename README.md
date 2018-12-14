@@ -30,8 +30,8 @@ After launching the app, go to
 1. http://localhost:9999/api Get hello page
 2. http://localhost:9999/swagger.json Documented by swagger application api as JSON
 3. http://localhost:9999/swagger.yaml Documented by swagger application api as YAML
-3. http://localhost:9999/swagger Swagger Web console
-4. http://localhost:9999/static Static resources
+3. http://localhost:9999/swagger-ui/ Swagger Web console
+4. http://localhost:9999/swagger-ui/static/ Static resources
 
 
 
