@@ -1,14 +1,16 @@
 # bootique-swagger-demo
 
-Simple [Bootique](http://bootique.io) app demonstrating the Bootique Swagger api documentation module. 
+A few sample apps demonstrating how to use [Bootique Swagger](https://github.com/bootique/bootique-swagger) to document
+REST APIs. The main example is `bootique-swagger-openapi3-demo` that demonstrates the use of
+[OpenAPI](https://swagger.io/docs/specification/about/).
 
 _For Bootique 1.x example, switch to [1.x branch](https://github.com/bootique-examples/bootique-swagger-demo/tree/1.x) of this demo._
 
-# Prerequisites
+## Prerequisites
 * Java 1.8 or newer.
 * Apache Maven.
 
-# Build the demo
+## Build and run the demo
 
 ```
 git clone https://github.com/bootique-examples/bootique-swagger-demo.git
@@ -18,13 +20,13 @@ mvn package
 Enter the following to launch application with default url to swagger.json:
 
 ```bash
-java -jar target/bootique-swagger-demo-1.1-SNAPSHOT.jar --server
+java -jar bootique-swagger-openapi3-demo/target/bootique-swagger-demo-1.1-SNAPSHOT.jar --server
 ```
 
 Enter the following to launch app with custom url to `swagger.json` configured in yml file:
 
 ```bash
-java -jar target/bootique-swagger-demo-1.1-SNAPSHOT.jar --server --config=customUrl.yml
+java -jar bootique-swagger-openapi3-demo/target/bootique-swagger-demo-1.1-SNAPSHOT.jar --server --config=customUrl.yml
 ```
 
 After launching the app, check the following URLs:

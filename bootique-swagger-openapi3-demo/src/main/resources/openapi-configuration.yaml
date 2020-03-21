@@ -1,4 +1,6 @@
-# Provides default configuration that is merged with endpoints data into the OpenAPI model of the app
+# Provides default configuration that is merged with endpoints metadata into the app's OpenAPI model.
+# You can add anything that OpenAPI 3.0.x specification supports one level below "openAPI:" key,
+# e.g. "servers", "paths", etc. See https://swagger.io/docs/specification/basic-structure/ for more details.
 openAPI:
   info:
     version: '1.0'
