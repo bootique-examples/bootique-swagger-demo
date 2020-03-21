@@ -2,7 +2,7 @@
 
 Simple [Bootique](http://bootique.io) app demonstrating the Bootique Swagger api documentation module. 
 
-_For Bootique 1.x example, switch to [1.x](https://github.com/bootique-examples/bootique-swagger-demo/tree/1.x) branch of this demo._
+_For Bootique 1.x example, switch to [1.x branch](https://github.com/bootique-examples/bootique-swagger-demo/tree/1.x) of this demo._
 
 # Prerequisites
 * Java 1.8 or newer.
@@ -31,8 +31,8 @@ After launching the app, check the following URLs:
 
 * Example REST API: http://localhost:8080/api
 * Swagger Web console: http://localhost:8080/swagger
-* Swagger model in JSON: http://localhost:8080/swagger.json
-* Swagger Model in YAML: http://localhost:8080/swagger.yaml
+* Swagger model as JSON: http://localhost:8080/swagger.json
+* Swagger model as YAML: http://localhost:8080/swagger.yaml
 
 
 
