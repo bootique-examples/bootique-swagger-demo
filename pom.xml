@@ -12,18 +12,32 @@
 
     <groupId>io.bootique.swagger.demo</groupId>
     <artifactId>bootique-swagger-demo</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>2.0-SNAPSHOT</version>
 
     <properties>
         <main.class>io.bootique.swagger.demo.Application</main.class>
     </properties>
+
+    <!-- TODO: the repo declaration is needed only while we are referencing SNAPSHOT builds of Bootique -->
+    <repositories>
+        <repository>
+            <id>bootique-snapshots</id>
+            <url>https://maven.objectstyle.org/nexus/content/repositories/bootique-snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>io.bootique.bom</groupId>
                 <artifactId>bootique-bom</artifactId>
-                <version>1.1</version>
+                <version>2.0-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

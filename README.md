@@ -1,6 +1,8 @@
 # bootique-swagger-demo
 
-Simple [Bootique](http://bootique.io) app demonstrating the Bootique Swagger api documentation module.
+Simple [Bootique](http://bootique.io) app demonstrating the Bootique Swagger api documentation module. 
+
+_For Bootique 1.x example, switch to [1.x](https://github.com/bootique-examples/bootique-swagger-demo/tree/1.x) branch of this demo._
 
 # Prerequisites
 * Java 1.8 or newer.
@@ -25,13 +27,12 @@ Enter the following to launch app with custom url to `swagger.json` configured i
 java -jar target/bootique-swagger-demo-1.1-SNAPSHOT.jar --server --config=customUrl.yml
 ```
 
-After launching the app, go to
+After launching the app, check the following URLs:
 
-1. http://localhost:8080/api Get hello page
-2. http://localhost:8080/swagger.json Documented by swagger application api as JSON
-3. http://localhost:8080/swagger.yaml Documented by swagger application api as YAML
-3. http://localhost:8080/swagger Swagger Web console
-4. http://localhost:8080/static Static resources
+* Example REST API: http://localhost:8080/api
+* Swagger Web console: http://localhost:8080/swagger
+* Swagger model in JSON: http://localhost:8080/swagger.json
+* Swagger Model in YAML: http://localhost:8080/swagger.yaml
 
 
 
