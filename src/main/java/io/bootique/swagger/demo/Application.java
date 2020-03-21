@@ -29,7 +29,8 @@ public class Application implements BQModule {
         conf.setResourcePackage("io.bootique.swagger.demo");
         conf.setSchemes(new String[]{"http"});
 
-        // quite counterintuitively, the following setter initializes Swagger metadata for the entire app.
+        // quite counterintuitively, the following setter is not a setter. It initializes Swagger metadata for the
+        // entire app and stores it in the ServletContext and in the ScannerFactory.SCANNER singleton
         conf.setScan(true);
     }
 

@@ -30,7 +30,7 @@ java -jar target/bootique-swagger-demo-1.1-SNAPSHOT.jar --server --config=custom
 After launching the app, check the following URLs:
 
 * Example REST API: http://localhost:8080/api
-* Swagger Web console: http://localhost:8080/swagger
+* Swagger Web console: http://localhost:8080/swagger-ui
 * Swagger model as JSON: http://localhost:8080/swagger.json
 * Swagger model as YAML: http://localhost:8080/swagger.yaml
 
