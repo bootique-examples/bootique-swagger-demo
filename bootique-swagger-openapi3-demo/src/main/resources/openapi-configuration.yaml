@@ -9,4 +9,3 @@ openAPI:
     license:
       name: Apache 2.0
       url: http://www.apache.org/licenses/LICENSE-2.0.html
-    resourcePackages: io.bootique.swagger.openapi3.demo
