@@ -16,6 +16,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>bootique-swagger-openapi3-demo</module>
         <module>bootique-swagger2-demo</module>
     </modules>
 
