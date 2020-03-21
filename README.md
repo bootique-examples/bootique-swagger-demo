@@ -10,31 +10,27 @@ _For Bootique 1.x example, switch to [1.x branch](https://github.com/bootique-ex
 * Java 1.8 or newer.
 * Apache Maven.
 
-## Build and run the demo
+## Build
 
 ```
 git clone https://github.com/bootique-examples/bootique-swagger-demo.git
 cd bootique-swagger-demo
 mvn package
 ```
+
+## Run
+
 Enter the following to launch application with default url to swagger.json:
-
-```bash
-java -jar bootique-swagger-openapi3-demo/target/bootique-swagger-demo-1.1-SNAPSHOT.jar --server
 ```
-
-Enter the following to launch app with custom url to `swagger.json` configured in yml file:
-
-```bash
-java -jar bootique-swagger-openapi3-demo/target/bootique-swagger-demo-1.1-SNAPSHOT.jar --server --config=customUrl.yml
+java -jar bootique-swagger-openapi3-demo/target/bootique-swagger-openapi3-demo-2.0-SNAPSHOT.jar --server
 ```
 
 After launching the app, check the following URLs:
 
 * Example REST API: http://127.0.0.1:8080/api
 * Swagger Web console: http://127.0.0.1:8080/swagger-ui
-* Swagger model as JSON: http://127.0.0.1:8080/swagger.json
-* Swagger model as YAML: http://127.0.0.1:8080/swagger.yaml
+* Swagger model as JSON: http://127.0.0.1:8080/openapi.json
+* Swagger model as YAML: http://127.0.0.1:8080/openapi.yaml
 
 
 
