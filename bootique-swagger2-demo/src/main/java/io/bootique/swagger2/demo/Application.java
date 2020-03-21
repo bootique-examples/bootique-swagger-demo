@@ -1,4 +1,4 @@
-package io.bootique.swagger.demo;
+package io.bootique.swagger2.demo;
 
 import io.bootique.Bootique;
 import io.bootique.di.BQModule;
@@ -24,9 +24,11 @@ public class Application implements BQModule {
         conf.setTitle("Bootique Swagger Demo");
         conf.setDescription("Demonstrates Swagger v2 API spec generation and presentation");
         conf.setVersion("2.0");
-        conf.setHost("localhost:8080");
+
+        // TODO: how do we set this based on request data?
+        conf.setHost("127.0.0.1:8080");
         conf.setBasePath("/");
-        conf.setResourcePackage("io.bootique.swagger.demo");
+        conf.setResourcePackage(HelloApi.class.getPackage().getName());
         conf.setSchemes(new String[]{"http"});
 
         // quite counterintuitively, the following setter is not a setter. It initializes Swagger metadata for the

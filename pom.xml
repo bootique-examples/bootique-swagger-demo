@@ -11,12 +11,13 @@
     </parent>
 
     <groupId>io.bootique.swagger.demo</groupId>
-    <artifactId>bootique-swagger-demo</artifactId>
+    <artifactId>bootique-swagger-demo-parent</artifactId>
     <version>2.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-    <properties>
-        <main.class>io.bootique.swagger.demo.Application</main.class>
-    </properties>
+    <modules>
+        <module>bootique-swagger2-demo</module>
+    </modules>
 
     <!-- TODO: the repo declaration is needed only while we are referencing SNAPSHOT builds of Bootique -->
     <repositories>
@@ -43,30 +44,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <dependencies>
-        <dependency>
-            <groupId>io.bootique.swagger</groupId>
-            <artifactId>bootique-swagger-ui</artifactId>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.bootique.swagger</groupId>
-            <artifactId>bootique-swagger</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.bootique.logback</groupId>
-            <artifactId>bootique-logback</artifactId>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>
