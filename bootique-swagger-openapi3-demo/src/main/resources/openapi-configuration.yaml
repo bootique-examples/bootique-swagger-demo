@@ -1,0 +1,12 @@
+# Provides default configuration that is merged with endpoints data into the OpenAPI model of the app
+openAPI:
+  info:
+    version: '1.0'
+    title: "Bootique OpenAPI 3.0 Demo"
+    description: "Demonstrates OpenAPI v3 API spec generation and presentation"
+    contact:
+      email: root@example.org
+    license:
+      name: Apache 2.0
+      url: http://www.apache.org/licenses/LICENSE-2.0.html
+    resourcePackages: io.bootique.swagger.openapi3.demo

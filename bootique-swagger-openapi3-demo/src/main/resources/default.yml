@@ -1,2 +1,2 @@
 swaggerui:
-  specPath: openapi.yaml
+  specPath: openapi.json
