@@ -1,3 +1,5 @@
+[![verify](https://github.com/bootique-examples/bootique-swagger-demo/actions/workflows/verify.yml/badge.svg)](https://github.com/bootique-examples/bootique-swagger-demo/actions/workflows/verify.yml)
+
 # bootique-swagger-demo
 
 A few sample apps demonstrating how to use [Bootique Swagger](https://github.com/bootique/bootique-swagger) to document
