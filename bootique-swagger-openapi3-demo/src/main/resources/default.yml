@@ -1,12 +1,11 @@
 swagger:
   specs:
     default:
-      pathJson: "openapi.json"
-      pathYaml: "openapi.yaml"
+      pathJson: "swagger.json"
+      pathYaml: "swagger.yaml"
       overrideSpec: "classpath:header.yml"
       resourcePackages:
         - io.bootique.swagger.openapi3.demo
 
 swaggerui:
-  default:
-    specPath: openapi.json
+    specUrl: swagger.json

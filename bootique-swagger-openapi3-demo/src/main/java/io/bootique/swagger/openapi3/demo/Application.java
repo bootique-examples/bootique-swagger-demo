@@ -1,12 +1,12 @@
 package io.bootique.swagger.openapi3.demo;
 
+import com.google.inject.Binder;
+import com.google.inject.Module;
 import io.bootique.BQCoreModule;
 import io.bootique.Bootique;
-import io.bootique.di.BQModule;
-import io.bootique.di.Binder;
 import io.bootique.jersey.JerseyModule;
 
-public class Application implements BQModule {
+public class Application implements Module {
 
     public static void main(String[] args) {
 

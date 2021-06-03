@@ -30,9 +30,7 @@ java -jar bootique-swagger-openapi3-demo/target/bootique-swagger-openapi3-demo-2
 After launching the app, check the following URLs:
 
 * Example REST API: http://127.0.0.1:8080/api
-* Swagger Web console: http://127.0.0.1:8080/swagger-ui
-* Swagger model as JSON: http://127.0.0.1:8080/openapi.json
-* Swagger model as YAML: http://127.0.0.1:8080/openapi.yaml
+* Swagger Web console: http://127.0.0.1:8080/swagger
 
 
 
