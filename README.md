@@ -8,6 +8,10 @@ REST APIs. The main example is `bootique-swagger-openapi3-demo` that demonstrate
 
 _For Bootique 1.x example, switch to [1.x branch](https://github.com/bootique-examples/bootique-swagger-demo/tree/1.x) of this demo._
 
+You can find different versions of framework in use at
+* [1.x](https://github.com/bootique-examples/bootique-swagger-demo/tree/1.x)
+* [2.x](https://github.com/bootique-examples/bootique-swagger-demo/tree/2.x)
+
 ## Prerequisites
 * Java 1.8 or newer.
 * Apache Maven.
