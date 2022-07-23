@@ -7,11 +7,10 @@
     <parent>
         <groupId>io.bootique.swagger.demo</groupId>
         <artifactId>bootique-swagger-demo-parent</artifactId>
-        <version>2.0-SNAPSHOT</version>
+        <version>3.0.M1-SNAPSHOT</version>
     </parent>
 
     <artifactId>bootique-swagger-openapi3-demo</artifactId>
-    <version>2.0-SNAPSHOT</version>
 
     <properties>
         <main.class>io.bootique.swagger.openapi3.demo.Application</main.class>
@@ -39,6 +38,35 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
+                <configuration>
+                    <createDependencyReducedPom>true</createDependencyReducedPom>
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>${main.class}</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

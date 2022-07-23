@@ -7,7 +7,6 @@ REST APIs. The main example is `bootique-swagger-openapi3-demo` that demonstrate
 [OpenAPI](https://swagger.io/docs/specification/about/).
 
 You can find different versions of framework in use at
-* [1.x](https://github.com/bootique-examples/bootique-swagger-demo/tree/1.x)
 * [2.x](https://github.com/bootique-examples/bootique-swagger-demo/tree/2.x)
 
 ## Prerequisites
@@ -26,7 +25,7 @@ mvn package
 
 Enter the following to launch application with default url to swagger.json:
 ```
-java -jar bootique-swagger-openapi3-demo/target/bootique-swagger-openapi3-demo-2.0-SNAPSHOT.jar --server
+java -jar bootique-swagger-openapi3-demo/target/bootique-swagger-openapi3-demo-*.jar --server
 ```
 
 After launching the app, check the following URLs:
