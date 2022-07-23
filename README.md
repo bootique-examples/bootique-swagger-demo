@@ -6,7 +6,6 @@ A few sample apps demonstrating how to use [Bootique Swagger](https://github.com
 REST APIs. The main example is `bootique-swagger-openapi3-demo` that demonstrates the use of
 [OpenAPI](https://swagger.io/docs/specification/about/).
 
-_For Bootique 1.x example, switch to [1.x branch](https://github.com/bootique-examples/bootique-swagger-demo/tree/1.x) of this demo._
 
 ## Prerequisites
 * Java 1.8 or newer.
