@@ -16,6 +16,8 @@
         <maven.compiler.release>11</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <bootique.version>3.0.M2-SNAPSHOT</bootique.version>
     </properties>
 
     <!-- TODO: the repo declaration is needed only while we are referencing SNAPSHOT builds of Bootique -->
@@ -37,7 +39,7 @@
             <dependency>
                 <groupId>io.bootique.bom</groupId>
                 <artifactId>bootique-bom</artifactId>
-                <version>3.0.M2-SNAPSHOT</version>
+                <version>${bootique.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
