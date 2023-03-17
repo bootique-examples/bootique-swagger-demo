@@ -12,6 +12,12 @@
         <module>bootique-swagger-openapi3-demo</module>
     </modules>
 
+    <properties>
+        <maven.compiler.release>11</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
     <!-- TODO: the repo declaration is needed only while we are referencing SNAPSHOT builds of Bootique -->
     <repositories>
         <repository>
@@ -43,11 +49,11 @@
             <plugins>
                 <plugin>
                     <artifactId>maven-shade-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>3.4.1</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.10.1</version>
+                    <version>3.11.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>

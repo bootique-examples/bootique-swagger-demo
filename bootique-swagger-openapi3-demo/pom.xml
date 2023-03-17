@@ -7,7 +7,7 @@
     <parent>
         <groupId>io.bootique.swagger.demo</groupId>
         <artifactId>bootique-swagger-demo-parent</artifactId>
-        <version>3.0.M1-SNAPSHOT</version>
+        <version>3.0.M2-SNAPSHOT</version>
     </parent>
 
     <artifactId>bootique-swagger-openapi3-demo</artifactId>
